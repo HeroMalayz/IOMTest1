@@ -1,0 +1,230 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    background-color: #FFFFFF;
+    background-image: linear-gradient(to bottom, #FFFFFF, #FFFFFF);
+    background-size: 100% 300px;
+    background-position: 0% 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    overflow: hidden;
+}
+
+.hero-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.headline {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    color: #FF9900;
+}
+
+.subheadline {
+    font-size: 24px;
+    margin-bottom: 32px;
+    color: #333333;
+}
+
+.cta-button {
+    background-color: #FF9900;
+    color: #FFFFFF;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e68a00;
+    transform: scale(1.05);
+}
+
+.scroll-down-arrow {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: bounce 2s infinite;
+}
+
+.scroll-down-arrow svg {
+    fill: #FF9900;
+    width: 24px;
+    height: 24px;
+}
+
+/* Benefit Section */
+.benefit-section {
+    padding: 80px 0;
+    background-color: #FFFFFF;
+}
+
+.section-heading {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.benefit-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.benefit-card {
+    background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.benefit-heading {
+    font-size: 20px; /* Increased size */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.benefit-description {
+    font-size: 16px; /* Increased size */
+    color: #666666;
+}
+
+/* Features Section */
+.features-section {
+    padding: 80px 0;
+    background-image: linear-gradient(to bottom, #f7f7f7, #fff);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature-card {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 1s ease-out;
+}
+
+.feature-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.feature-heading {
+    font-size: 20px; /* Increased size */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.feature-description {
+    font-size: 16px; /* Increased size */
+    color: #666666;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 60px 0;
+    background-color: #f7f7f7;
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonial-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.testimonial {
+    background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    margin: 0 20px;
+    animation: slideIn 1s ease-out;
+}
+
+.testimonial span {
+    display: block;
+    margin-top: 10px;
+    font-style: italic;
+    color: #666666;
+}
+
+/* Animations */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
